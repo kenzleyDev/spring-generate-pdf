@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cursos de exemplo</title>
+</head>
+<body>
+
+<h1>Lista de cursos</h1>
+
+<table>
+  <thead>
+  <tr>
+    <th>Nome do Curso</th>
+    <th>Autor do curso</th>
+    <th>Carga horária</th>
+  </tr>
+  </thead>
+  <tbody>
+    <tr th:each="curso : ${cursos}">
+      <td th:text="${curso.nome}"></td>
+      <td th:text="${curso.autor}"></td>
+      <td th:text="${curso.cargaHoraria}"></td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>
